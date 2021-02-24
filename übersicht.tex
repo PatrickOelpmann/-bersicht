@@ -1,0 +1,194 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{cite}
+\usepackage{braket}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\graphicspath{{Bilder/}}
+
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Angular selective electron detection using an MCP}
+
+
+\author{Patrick Oelpmann}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\newpage
+\section{Neutrinos}
+	\subsection{prediction}
+	\subsection{experiments to prove neutrinos}
+	\subsection{solar neutrino problem}
+	\subsection{neutrino oscillation}
+	\subsection{methods to determine neutrino mass}
+		\subsubsection{kinematics of electrons in beta decay}
+		\subsubsection{neutrinoless double beta decay}
+		\subsubsection{cosmologie}
+
+
+
+
+\newpage
+\section{KATRIN}
+	\subsection{KATRIN in general and why Tritium?}
+	\subsection{major components}
+		\subsubsection{rear section}
+		\subsubsection{WGTS}
+%			\subsubsubsection{Raman Spectroscopy}
+		\subsubsection{transport section}
+%			\subsubsubsection{differential section}
+%			\subsubsubsection{cryogenic section}
+		\subsubsection{pre Spectrometer and Main Spectrometer (MAC-E Filters)}
+			\subsubsubsection{working principle}
+			\subsubsubsection{transmission function and energy resolution} 
+			\subsubsubsection{properties of the MAC-E filters}
+		\subsubsection{Detector}
+		\subsubsection{Monitor spectrometer}
+
+\subsection{sources of uncertainties}
+	\subsubsection{Eloss, plasma, high voltage etc.}
+	\subsubsection{background}
+		\subsubsubsection{Rydberg background}
+		\subsubsubsection{Radon background}
+
+
+\newpage
+\section{Test setup}
+%Introduction why it is like it is
+	\subsection{Vacuum system}
+	\subsection{EGun}
+	\subsection{Transport section}
+%		\subsubsection{white coils}
+%		\subsubsection{beamtube coils}
+%		\subsubsection{electrodes inside beamtubes}
+%		\subsubsection{dipole electrode}
+	\subsection{Micro channel Plate}
+		\subsubsection{MCP filter behind the Dice}
+		\subsubsection{MCP detector} 
+	\subsection{Deflection coils}
+
+
+\newpage
+
+\section{Angular selective electron detection}
+
+	\subsection{Motivation}
+			
+	\subsection{Measurements}
+		\subsubsection{Egun to zero degree} 
+		%\subsubsection{use of deflection coils to deflect in a circle}
+		\subsubsection{inserting MCP filter and set EGun to a combination of polar and azimuthal angle until transmission}
+		\subsubsection{use of deflection coils to deflect in a circle with MCP filter}
+		\subsubsection{dependence of the magnetic field wheather transmission through MCP filter or not}
+			\subsubsubsection{spikes of transmission with periodic distance}
+		\subsubsection{without MCP filter: varying the magnetic field at beamtube and by this there were intervals with lower countrate}
+		\subsubsection{Wanted to investigate the intervals with lower countrate with a filtered beam}
+			\subsubsubsection{varying beamtube 1 and beamtube 2 seperatly and fitting}
+			\subsubsubsection{many degrees of freedom and not a better result so the MCP filter will not be used again}
+		\subsubsection{diagonal lines by varying beamtube current and detectorcurrent without tilted MCP}
+			\subsubsubsection{explanantion why there are diagonal lines $\rightarrow$ channels are tilted with respect to magnetic field line}
+		\subsubsection{installing of a tilted flange to reduce degree of freedom}
+			\subsubsection{diagonal lines by varying beamtube current and detectorcurrent with tilted MCP}
+		\subsubsection{MCP rotated to right direction and moving of egun coil nearer to egun for higher magentic field at creation point}
+		\subsubsection{use of deflection coils for four quadrant pictures with deep holes}
+
+	\subsection{Simulations with Kassiopeia}
+		\subsubsection{consideration of channels}
+		\subsubsection{pictures of the simulations}
+
+
+
+
+\newpage
+\section{conclusion}
+	\subsection{proven that angular selective electron detection principle works}
+
+\newpage
+\section{outlook}
+	\subsection{aTEF}
+		\subsubsection{creation in our working group}
+		\subsubsection{pictures of aTEF}
+
+\begin{comment}
+geschichte der messungen:\\
+
+Erst deflection coils installiert um an 6° zu kommen\\
+dann gemerkt, dass wir das nicht schaffen keine zählrate zu bekommen und somit die egun auf 0 grad gestellt mit laser methode.\\
+dann gemerkt, dass auch das nicht so viel gebracht hat. Dann MCP filter eingebaut um winkelakzeptanz zu verringern.\\
+Dann habe ich den WInkelparameterraum der egun durch gefahren um irgendwann zu einem transmissionsmaximum zu kommen durch MCP filter\\
+Dann haben wir gemerkt, dass kleine veränderungen der Stromstärken durch die Spulen große effekte haben, ob elektronen durch MCP filter gehen. Daher wussten wir, dass es mit der zyklotornperiode zusammen hängen muss. Das konnte man auch mathematisch herleiten. Dazu gibt es peakbilder.\\
+Dann haben wir den MCP filter genutzt und einen Kreis am Detektor abgefahren mit den Deflection coils um minimum zu finden. Das Minimum hatte reduktion von 4.5 zufolge. Erster erfolg!\\
+Dann wollten wir den MCP filter nutzen und dabei aber auch die Phase der zyklotornbewegung am MCP detektor variieren können. Das war so allerdings nicht möglich, da sonst die transmission durch den MCP filter verloren geht. Darum musste die zweite beamtube gleichzeitig mit variiert werden, wenn die erste beamtube variiert wird. dabei kam ein linearer zusammenhang heraus. Dazu gibt es bilder.\\
+Dann haben wir eine gekipppten flansch am detektor eingebaut um detektor selbst drehen zu können und nicht mehr so stark auf deflectioncoils angewiesen sind. Es wurde allerdings in die falsche richtung gedreht, da der MCP die kanäle nicht wie gedacht in die eine richtung orientiert hatte, sondern 90° dazu, somit kamen keine neuen besseren messungen heraus.\\
+Dann wurde die EGun coil in Richtung Elektronen enetstehungsort geschoben, ob Magnetfeld dort zu erhöhen und somit den Zyklotronradius zu verringern an detektor und den winkel an detektor zu verringern. Das kann man herleiten.\\
+Dann wurde der MCP nochmal raus genommen und auseinander gebaut, wobei festgestellt wurde, dass die Kanäle falsch orientiert waren. Nun wurde der MCP so an den FLansch angebracht, dass die kanäle in jedem fall parallel zur beamachse orientiert sind.\\
+Damit wurden dann neue Plots gemacht, bei denen der Parameterraum der Deflectioncopils in horizontale und vertikale richtung abgescannt wurde. Dazu gibt es vierquadranten plots und weitere einquadrant plots. Diese waren sehr erfolgreich, da wurde ein reduktionsfaktor von bis zu 33.3 erkannt\\
+Des Weiteren wurden noch Amplitudenspektren erstellt, die die Vermutungen untermauert haben.\\
+Bei änderung des Winkels an der egun von 0° auf 5° konnte man bei kleinen Strömen an der EGunspule erkennen, dass das minimum bei höheren polarwinkeln an der egun nicht mehr zu erkennen ist, wohingegen das bei 0° polarwinkel noch zu erkkenn ist. Das untermauert unsere vermutungen zusätzlich. AUch dazu gibt es plots.\\
+\par
+Kannst auch im projektplanungsvortrag nochmal gucken, wie die historie war!
+\end{comment}
+\newpage
+\end{document}
